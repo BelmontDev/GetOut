@@ -1,0 +1,114 @@
+[gd_scene load_steps=7 format=3 uid="uid://dfpnq0rdgs710"]
+
+[ext_resource type="PackedScene" uid="uid://bagrniqqu820l" path="res://Player/player.tscn" id="1_450cj"]
+[ext_resource type="Texture2D" uid="uid://csk1k02sepj04" path="res://Assets/Map/brackeys_platformer_assets/sprites/platforms.png" id="2_v80jh"]
+[ext_resource type="Script" uid="uid://brbi6pa0wvo38" path="res://Player/fall_zone.gd" id="3_rykt0"]
+[ext_resource type="Texture2D" uid="uid://byv7wkh0np1yg" path="res://Assets/Map/4 background/orig.png" id="4_ryw2i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ryw2i"]
+size = Vector2(1714.5, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_asjnd"]
+size = Vector2(45, 5)
+
+[node name="World" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_450cj")]
+position = Vector2(54, 96)
+metadata/_edit_group_ = true
+
+[node name="FallZone" type="Area2D" parent="."]
+script = ExtResource("3_rykt0")
+
+[node name="FallTouch" type="CollisionShape2D" parent="FallZone"]
+position = Vector2(624.75, 289)
+shape = SubResource("RectangleShape2D_ryw2i")
+
+[node name="Ground3" type="StaticBody2D" parent="."]
+position = Vector2(293, 167)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Ground3"]
+position = Vector2(86, 23)
+texture = ExtResource("2_v80jh")
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground3"]
+position = Vector2(78.5, 19.5)
+shape = SubResource("RectangleShape2D_asjnd")
+
+[node name="Ground4" type="StaticBody2D" parent="."]
+position = Vector2(-19, 178)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Ground4"]
+position = Vector2(86, 23)
+texture = ExtResource("2_v80jh")
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground4"]
+position = Vector2(78.5, 19.5)
+shape = SubResource("RectangleShape2D_asjnd")
+
+[node name="Ground" type="StaticBody2D" parent="."]
+position = Vector2(645, 174)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Ground"]
+position = Vector2(86, 23)
+texture = ExtResource("2_v80jh")
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
+position = Vector2(78.5, 19.5)
+shape = SubResource("RectangleShape2D_asjnd")
+
+[node name="Ground2" type="StaticBody2D" parent="."]
+position = Vector2(820, 133)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Ground2"]
+position = Vector2(86, 23)
+texture = ExtResource("2_v80jh")
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground2"]
+position = Vector2(78.5, 19.5)
+shape = SubResource("RectangleShape2D_asjnd")
+
+[node name="Ground5" type="StaticBody2D" parent="."]
+position = Vector2(148, 203)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Ground5"]
+position = Vector2(86, 23)
+texture = ExtResource("2_v80jh")
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground5"]
+position = Vector2(78.5, 19.5)
+shape = SubResource("RectangleShape2D_asjnd")
+
+[node name="Ground6" type="StaticBody2D" parent="."]
+position = Vector2(466, 204)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Ground6"]
+position = Vector2(86, 23)
+texture = ExtResource("2_v80jh")
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground6"]
+position = Vector2(78.5, 19.5)
+shape = SubResource("RectangleShape2D_asjnd")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(720, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(0, -52)
+scale = Vector2(1.27083, 1.34877)
+texture = ExtResource("4_ryw2i")
+centered = false

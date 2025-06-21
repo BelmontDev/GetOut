@@ -1,0 +1,105 @@
+[gd_scene load_steps=16 format=3 uid="uid://cg3g2jx3t82i0"]
+
+[ext_resource type="Texture2D" uid="uid://i0scq26svj30" path="res://Assets/Map/DeadZone/Spritesheets/Fire+Sparks-Sheet.png" id="1_bq3yw"]
+[ext_resource type="Script" uid="uid://dimybvmkarkek" path="res://flames.gd" id="1_hi1gs"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hi1gs"]
+atlas = ExtResource("1_bq3yw")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ly1on"]
+atlas = ExtResource("1_bq3yw")
+region = Rect2(96, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_28odl"]
+atlas = ExtResource("1_bq3yw")
+region = Rect2(192, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x1ooo"]
+atlas = ExtResource("1_bq3yw")
+region = Rect2(288, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mjwij"]
+atlas = ExtResource("1_bq3yw")
+region = Rect2(0, 96, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3qsgi"]
+atlas = ExtResource("1_bq3yw")
+region = Rect2(96, 96, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r2bpe"]
+atlas = ExtResource("1_bq3yw")
+region = Rect2(192, 96, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ylh5g"]
+atlas = ExtResource("1_bq3yw")
+region = Rect2(288, 96, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sgldj"]
+atlas = ExtResource("1_bq3yw")
+region = Rect2(0, 192, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_88gxi"]
+atlas = ExtResource("1_bq3yw")
+region = Rect2(96, 192, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hhmvx"]
+atlas = ExtResource("1_bq3yw")
+region = Rect2(192, 192, 96, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dyyj7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hi1gs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ly1on")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_28odl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x1ooo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mjwij")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3qsgi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r2bpe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ylh5g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sgldj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_88gxi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hhmvx")
+}],
+"loop": true,
+"name": &"FlameIdle",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_efogc"]
+radius = 37.6563
+
+[node name="Flames" type="Area2D"]
+script = ExtResource("1_hi1gs")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_dyyj7")
+animation = &"FlameIdle"
+frame_progress = 0.45523
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 30)
+shape = SubResource("CircleShape2D_efogc")

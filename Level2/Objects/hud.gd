@@ -1,4 +1,4 @@
 extends CanvasLayer
 
-func actualizar_contador(monedas: int):
-	$GemValue.text = str(monedas)
+func update_count(Gem: int):
+	$GemValue.text = str(Gem)

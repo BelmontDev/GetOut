@@ -52,6 +52,6 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 	
-func recoger_moneda():
+func Pickup_Gem():
 	points += 1
-	get_node("/root/World/HUD").actualizar_contador(points)
+	get_node("/root/World/HUD").update_count(points)

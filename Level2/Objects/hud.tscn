@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://caoy5ws14svrd"]
+
+[ext_resource type="Texture2D" uid="uid://dbeqnj3hi7weq" path="res://Assets/Map/crafting_materials/resources_basic.png" id="1_m3f2w"]
+[ext_resource type="Script" uid="uid://d37atfldch02m" path="res://Objects/hud.gd" id="1_r85nm"]
+[ext_resource type="FontFile" uid="uid://cyymtw1t4bdea" path="res://Assets/Fonts/MegamaxJonathanToo-YqOq2.ttf" id="2_gc22p"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gc22p"]
+atlas = ExtResource("1_m3f2w")
+region = Rect2(72, 48.5, 22, 21)
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_r85nm")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = SubResource("AtlasTexture_gc22p")
+
+[node name="SpacingValueGem" type="Label" parent="."]
+offset_left = 42.0
+offset_top = 14.0
+offset_right = 82.0
+offset_bottom = 63.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_gc22p")
+text = "X
+"
+
+[node name="GemValue" type="Label" parent="."]
+offset_left = 59.0
+offset_top = 10.0
+offset_right = 99.0
+offset_bottom = 63.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_gc22p")
+theme_override_font_sizes/font_size = 25
+text = "0
+"

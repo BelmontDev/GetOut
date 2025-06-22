@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://ofkutgceeemk"]
+
+[ext_resource type="Script" uid="uid://klly6ry2hwik" path="res://Objects/Object.gd" id="1_b2uro"]
+[ext_resource type="Texture2D" uid="uid://dbeqnj3hi7weq" path="res://Assets/Map/crafting_materials/resources_basic.png" id="2_b2uro"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b2uro"]
+radius = 11.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hv55f"]
+atlas = ExtResource("2_b2uro")
+region = Rect2(77.6007, 50.4584, 13.9624, 17.9253)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4fjgl"]
+atlas = SubResource("AtlasTexture_hv55f")
+
+[node name="Crystal" type="Node2D"]
+
+[node name="Object" type="Area2D" parent="."]
+script = ExtResource("1_b2uro")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Object"]
+position = Vector2(6, 9)
+shape = SubResource("CircleShape2D_b2uro")
+
+[node name="Sprite2D" type="TextureRect" parent="Object"]
+texture = SubResource("AtlasTexture_4fjgl")
+
+[connection signal="body_entered" from="Object" to="Object" method="_on_body_entered"]

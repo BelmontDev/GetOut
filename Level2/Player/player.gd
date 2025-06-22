@@ -3,13 +3,14 @@ extends CharacterBody2D
 var speed := 150
 var direccion := 0.0
 var jump := 300
+var points = 0
 const gravity := 9
 
 @onready var anim := $AnimatedSprite2D
 
 var was_on_floor := false
 var landing_timer := 0.0  # Temporizador para la animación de aterrizaje
-var landing_duration := .3  # Duración de la animación de aterrizaje (2 segundos)
+var landing_duration := .2  # Duración de la animación de aterrizaje (2 segundos)
 
 func _physics_process(delta: float) -> void:
 	direccion = Input.get_axis("ui_left", "ui_right")
@@ -49,3 +50,8 @@ func _physics_process(delta: float) -> void:
 	was_on_floor = is_on_floor()
 
 	move_and_slide()
+	
+	
+func recoger_moneda():
+	points += 1
+	get_node("/root/World/HUD").actualizar_contador(points)

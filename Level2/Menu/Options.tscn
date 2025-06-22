@@ -1,0 +1,87 @@
+[gd_scene load_steps=8 format=3 uid="uid://d1vbcjmmyxqm4"]
+
+[ext_resource type="Script" uid="uid://dpxd4gerjkbba" path="res://Menu/options.gd" id="1_ty45b"]
+[ext_resource type="Texture2D" uid="uid://be036f8u3uylp" path="res://Assets/Menu/Background.png" id="2_lg0h4"]
+[ext_resource type="FontFile" uid="uid://cyymtw1t4bdea" path="res://Assets/Fonts/MegamaxJonathanToo-YqOq2.ttf" id="3_71d5m"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8w4re"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="Theme" id="Theme_borew"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ofseh"]
+content_margin_left = 5.0
+content_margin_right = 5.0
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w6voe"]
+bg_color = Color(1, 1, 1, 1)
+
+[node name="Options" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ty45b")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_lg0h4")
+expand_mode = 1
+
+[node name="VBoxContainer-Options" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Volume" type="Button" parent="VBoxContainer-Options"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_71d5m")
+theme_override_styles/normal = SubResource("StyleBoxFlat_8w4re")
+text = "Volume
+"
+
+[node name="Size" type="Button" parent="VBoxContainer-Options"]
+layout_mode = 2
+theme = SubResource("Theme_borew")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_71d5m")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ofseh")
+text = "RESOLUTION"
+
+[node name="Back" type="Button" parent="VBoxContainer-Options"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_71d5m")
+theme_override_styles/normal = SubResource("StyleBoxFlat_w6voe")
+text = "BACK"
+
+[connection signal="pressed" from="VBoxContainer-Options/Volume" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="VBoxContainer-Options/Size" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="VBoxContainer-Options/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="VBoxContainer-Options/Back" to="." method="_on_exit_pressed"]

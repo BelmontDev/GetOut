@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://dfpnq0rdgs710"]
+[gd_scene load_steps=12 format=4 uid="uid://dfpnq0rdgs710"]
 
 [ext_resource type="PackedScene" uid="uid://bagrniqqu820l" path="res://Player/player.tscn" id="1_450cj"]
 [ext_resource type="Script" uid="uid://brbi6pa0wvo38" path="res://Player/fall_zone.gd" id="3_rykt0"]
@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://dgux4mg6hs4mn" path="res://Assets/Map/brackeys_platformer_assets/sprites/world_tileset.png" id="5_asjnd"]
 [ext_resource type="PackedScene" uid="uid://caoy5ws14svrd" path="res://Objects/hud.tscn" id="5_xxcos"]
 [ext_resource type="PackedScene" uid="uid://ofkutgceeemk" path="res://Objects/crystal.tscn" id="6_xxcos"]
+[ext_resource type="PackedScene" uid="uid://by3tc57w0nc2i" path="res://Platform/MovexSlide.tscn" id="7_ok38w"]
+[ext_resource type="PackedScene" uid="uid://cc12j5e507lpf" path="res://Platform/plateralDRtoIZQ.tscn" id="8_rp4ux"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ryw2i"]
 size = Vector2(3690, 20)
@@ -187,3 +189,9 @@ position = Vector2(550, 189)
 
 [node name="Crystal" parent="." instance=ExtResource("6_xxcos")]
 position = Vector2(221, 184)
+
+[node name="Path2D" parent="." instance=ExtResource("7_ok38w")]
+position = Vector2(-114, 68)
+
+[node name="Plateral" parent="." instance=ExtResource("8_rp4ux")]
+position = Vector2(718, 253)

@@ -83,5 +83,5 @@ text = "BACK"
 
 [connection signal="pressed" from="VBoxContainer-Options/Volume" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="VBoxContainer-Options/Size" to="." method="_on_settings_pressed"]
-[connection signal="pressed" from="VBoxContainer-Options/Back" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="VBoxContainer-Options/Back" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="VBoxContainer-Options/Back" to="." method="_on_back_pressed"]

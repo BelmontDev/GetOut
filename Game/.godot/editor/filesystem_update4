@@ -1,3 +1,12 @@
 res://nivel0.tscn
 res://Level2/Player/world.tscn
 res://Menu/menu.tscn
+res://personaje.gd
+res://plataforma.gd
+res://Level2/Objects/hud.gd
+res://Level2/Objects/Object.gd
+res://Level2/Platform/plataforma.gd
+res://Level2/Platform/plataforma.tscn
+res://Level2/Player/fall_zone.gd
+res://Level2/Player/player.gd
+res://Menu/menu.gd

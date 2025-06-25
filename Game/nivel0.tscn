@@ -1,0 +1,60 @@
+[gd_scene load_steps=6 format=3 uid="uid://di2l3ny17shtc"]
+
+[ext_resource type="PackedScene" uid="uid://ng363yp515lm" path="res://personaje.tscn" id="1_jx64p"]
+[ext_resource type="PackedScene" uid="uid://cq0crhj3rilvy" path="res://plataforma.tscn" id="2_wmlxa"]
+[ext_resource type="Texture2D" uid="uid://cb2nhne3yjojm" path="res://puerta.png" id="3_hjuvm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3213g"]
+size = Vector2(1150, 302)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x37vy"]
+size = Vector2(24, 24)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="reset_area" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="reset_area"]
+position = Vector2(541, 258)
+shape = SubResource("RectangleShape2D_3213g")
+
+[node name="CharacterBody2D" parent="reset_area" instance=ExtResource("1_jx64p")]
+position = Vector2(117, 55)
+
+[node name="plataforma" parent="reset_area" instance=ExtResource("2_wmlxa")]
+position = Vector2(35, 33)
+
+[node name="puerta" type="Area2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="puerta"]
+position = Vector2(338, -74)
+texture = ExtResource("3_hjuvm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="puerta"]
+position = Vector2(339, -73)
+shape = SubResource("RectangleShape2D_x37vy")
+
+[node name="plataforma" parent="." instance=ExtResource("2_wmlxa")]
+position = Vector2(143, -3)
+tipo = 2
+
+[node name="plataforma2" parent="." instance=ExtResource("2_wmlxa")]
+position = Vector2(252, -8)
+tipo = 3
+
+[node name="plataforma3" parent="." instance=ExtResource("2_wmlxa")]
+position = Vector2(161, 66)
+tipo = 1
+
+[node name="plataforma4" parent="." instance=ExtResource("2_wmlxa")]
+position = Vector2(336, -40)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(0, -1)
+
+[connection signal="body_entered" from="reset_area" to="reset_area/CharacterBody2D" method="_on_reset_area_body_entered"]
+[connection signal="body_entered" from="puerta" to="reset_area/CharacterBody2D" method="_on_puerta_body_entered"]

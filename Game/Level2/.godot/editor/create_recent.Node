@@ -1,0 +1,15 @@
+OptionButton
+AnimationPlayer
+PathFollow2D
+Path2D
+CollisionShape2D
+Sprite2D
+AnimatableBody2D
+Label
+TextureRect
+Button
+VBoxContainer
+ColorRect
+CanvasLayer
+HBoxContainer
+Camera2D

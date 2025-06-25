@@ -1,0 +1,68 @@
+[gd_scene load_steps=7 format=3 uid="uid://by3tc57w0nc2i"]
+
+[ext_resource type="PackedScene" uid="uid://c3d28gxa7mh3g" path="res://Platform/plataforma.tscn" id="1_a63mh"]
+
+[sub_resource type="Curve2D" id="Curve2D_kehob"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 189, 114, 0, 0, 0, 0, 317, 114)
+}
+point_count = 2
+
+[sub_resource type="Animation" id="Animation_d1dc1"]
+resource_name = "Platformlateral"
+length = 3.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:progress_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5, 3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_ku0m6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:progress_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_a63mh"]
+resource_name = "pLateralD>I"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nfy0s"]
+_data = {
+&"Platformlateral": SubResource("Animation_d1dc1"),
+&"RESET": SubResource("Animation_ku0m6"),
+&"pLateralD>I": SubResource("Animation_a63mh")
+}
+
+[node name="Plataforma1" type="Path2D"]
+position = Vector2(-12, 2)
+curve = SubResource("Curve2D_kehob")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
+position = Vector2(253.499, 114)
+progress = 64.4991
+
+[node name="Plataforma" parent="PathFollow2D" instance=ExtResource("1_a63mh")]
+rotation = -0.0107523
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="PathFollow2D/Plataforma"]
+libraries = {
+&"": SubResource("AnimationLibrary_nfy0s")
+}
+autoplay = "Platformlateral"

@@ -11,12 +11,16 @@ config_version=5
 [application]
 
 config/name="plataformas"
-run/main_scene="uid://di2l3ny17shtc"
+run/main_scene="uid://cj04qtfwpxx8v"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [display]
 
+window/size/viewport_width=426
+window/size/viewport_height=240
+window/size/window_width_override=1280
+window/size/window_height_override=720
 window/stretch/mode="canvas_items"
 
 [rendering]

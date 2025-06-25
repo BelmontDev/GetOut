@@ -1,2 +1,4 @@
+res://Menu/menu.tscn
 res://nivel0.tscn
-res://personaje.gd
+res://Level2/Player/world.tscn
+res://Menu/menu.gd

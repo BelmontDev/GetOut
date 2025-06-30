@@ -1,13 +1,6 @@
-res://nivel0.tscn
-res://Level2/Player/player.gd
-res://Level2/Player/world.tscn
 res://Menu/menu.tscn
-<<<<<<< HEAD
-res://Level2/Objects/hud.tscn
-res://Level2/Objects/crystal.tscn
-res://personaje.tscn
-=======
-res://personaje.tscn
-res://plataforma.tscn
-res://plataforma.gd
->>>>>>> 15d17d242eb277b6c741c25557e007b932962734
+res://Level2/Player/world.tscn
+res://meta_zone.gd
+res://Level2/Player/world.gd
+res://meta_zone.tscn
+res://finished_menu.tscn

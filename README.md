@@ -16,7 +16,7 @@ Un juego de plataformas simple desarrollado con [Godot Engine](https://godotengi
 
 ## 📷 Capturas de pantalla
 
-![Gameplay]("Documents\game.png")
+![Gameplay]("game.png")
 
 ## ▶️ Cómo jugar
 

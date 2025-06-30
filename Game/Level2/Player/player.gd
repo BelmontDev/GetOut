@@ -4,7 +4,7 @@ var speed := 150
 var direccion := 0.0
 var jump := 300
 var points = 0
-const gravity := 9
+const gravity := 10
 
 @onready var anim := $AnimatedSprite2D
 

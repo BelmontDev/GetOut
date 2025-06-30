@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://ofkutgceeemk"]
 
-[ext_resource type="Script" uid="uid://klly6ry2hwik" path="res://Objects/Object.gd" id="1_b2uro"]
-[ext_resource type="Texture2D" uid="uid://dbeqnj3hi7weq" path="res://Assets/Map/crafting_materials/resources_basic.png" id="2_b2uro"]
+[ext_resource type="Script" uid="uid://klly6ry2hwik" path="res://Level2/Objects/Object.gd" id="1_b2uro"]
+[ext_resource type="Texture2D" uid="uid://dbeqnj3hi7weq" path="res://Level2/Assets/Map/crafting_materials/resources_basic.png" id="2_b2uro"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_b2uro"]
 radius = 11.0

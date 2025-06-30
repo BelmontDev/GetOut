@@ -1,11 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1750867449
+::res://::1750890885
 Hero_006_Idle.png::CompressedTexture2D/CompressedTexture2D::3819534584892316794::1750867448::1750867656::1::::<><><>0<>0<>a76139512749ec7101a9495fd62a251a<>res://.godot/imported/Hero_006_Idle.png-3b6b4a61be456eca0051386b4092bd3a.ctex::
 icon.svg::CompressedTexture2D/CompressedTexture2D::4973193512697339636::1750867449::1750867656::1::::<><><>0<>0<>2c55816556854e4d90ba75964ffbbddd<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-nivel0.tscn::PackedScene::7777229609796602228::1750867449::0::1::::<><><>0<>0<><>::uid://ng363yp515lm::::res://personaje.tscn<>uid://cq0crhj3rilvy::::res://plataforma.tscn<>uid://cb2nhne3yjojm::::res://puerta.png
-personaje.gd::GDScript/GDScript::4442036854926504499::1750867449::0::1::::<>CharacterBody2D<><>0<>0<><>::
-personaje.tscn::PackedScene/PackedScene::926598177679080842::1750867449::0::1::::<><><>0<>0<><>::uid://b4j0xy5vext3x::::res://personaje.gd<>uid://buohgad81kok5::::res://Hero_006_Idle.png
-plataforma.gd::GDScript/GDScript::2748307243517143145::1750867449::0::1::::<>Area2D<><>0<>0<><>::
+nivel0.tscn::PackedScene::7777229609796602228::1750890465::0::1::::<><><>0<>0<><>::uid://ng363yp515lm::::res://personaje.tscn<>uid://cq0crhj3rilvy::::res://plataforma.tscn<>uid://cb2nhne3yjojm::::res://puerta.png
+personaje.gd::GDScript/GDScript::4442036854926504499::1750867668::0::1::::<>CharacterBody2D<><>0<>0<><>::
+personaje.tscn::PackedScene::926598177679080842::1750890465::0::1::::<><><>0<>0<><>::uid://b4j0xy5vext3x::::res://personaje.gd<>uid://buohgad81kok5::::res://Hero_006_Idle.png
+plataforma.gd::GDScript/GDScript::2748307243517143145::1750867669::0::1::::<>Area2D<><>0<>0<><>::
 plataforma.tscn::PackedScene/PackedScene::5947624484790059038::1750867449::0::1::::<><><>0<>0<><>::uid://bffkho5ptp6v2::::res://plataforma.gd<>uid://dy5dkia6edv7::::res://Platform.png
 Platform.png::CompressedTexture2D/CompressedTexture2D::261939001809764998::1750867449::1750867656::1::::<><><>0<>0<>957e0046a8a4016baf16c0efedd6b0ab<>res://.godot/imported/Platform.png-542605f8d0c23af6a571efe7214c2e6a.ctex::
 puerta.png::CompressedTexture2D/CompressedTexture2D::4899570922134550462::1750867449::1750867656::1::::<><><>0<>0<>e68764239b054f61c1f1ae040c15ef4b<>res://.godot/imported/puerta.png-b6dc9dddeb950276fc06abeafc18720d.ctex::
@@ -162,10 +162,10 @@ background_1.png::CompressedTexture2D/CompressedTexture2D::8582929544604334932::
 background_2.png::CompressedTexture2D/CompressedTexture2D::6817490488073325984::1750867449::1750867449::1::::<><><>0<>0<>ea878bb3c1d6867e61f5e2c0c8e9cc1a<>res://.godot/imported/background_2.png-6c1402ced5057aa7e5a009f08704ce93.ctex::
 example.png::CompressedTexture2D/CompressedTexture2D::3284311538951289342::1750867449::1750867449::1::::<><><>0<>0<>10a0b5321b64bdb9ee1cf871b683917c<>res://.godot/imported/example.png-118d3d0ce62ce46a7f8d96d62b332f45.ctex::
 tileset.png::CompressedTexture2D/CompressedTexture2D::5766328697983895689::1750867449::1750867449::1::::<><><>0<>0<>291898c0c6eed5edef857b9abee117d7<>res://.godot/imported/tileset.png-1f0a96d50dbe0bc62ee0a72ad4a4ceb5.ctex::
-::res://Level2/Objects/::1750867449
-crystal.tscn::PackedScene/PackedScene::993609592817372498::1750867449::0::1::::<><><>0<>0<><>::uid://klly6ry2hwik::::res://Objects/Object.gd<>uid://dbeqnj3hi7weq::::res://Assets/Map/crafting_materials/resources_basic.png
+::res://Level2/Objects/::1750890465
+crystal.tscn::PackedScene::993609592817372498::1750890465::0::1::::<><><>0<>0<><>::uid://klly6ry2hwik::::res://Level2/Objects/Object.gd<>uid://dbeqnj3hi7weq::::res://Level2/Assets/Map/crafting_materials/resources_basic.png
 hud.gd::GDScript/GDScript::9190643970907198974::1750867449::0::1::::<>CanvasLayer<><>0<>0<><>::
-hud.tscn::PackedScene/PackedScene::4803254622127570745::1750867449::0::1::::<><><>0<>0<><>::uid://dbeqnj3hi7weq::::res://Assets/Map/crafting_materials/resources_basic.png<>uid://d37atfldch02m::::res://Objects/hud.gd<>uid://cyymtw1t4bdea::::res://Assets/Fonts/MegamaxJonathanToo-YqOq2.ttf
+hud.tscn::PackedScene::4803254622127570745::1750890465::0::1::::<><><>0<>0<><>::uid://dbeqnj3hi7weq::::res://Level2/Assets/Map/crafting_materials/resources_basic.png<>uid://d37atfldch02m::::res://Level2/Objects/hud.gd<>uid://cyymtw1t4bdea::::res://Level2/Assets/Fonts/MegamaxJonathanToo-YqOq2.ttf
 Object.gd::GDScript/GDScript::725308993261491610::1750867449::0::1::::<>Area2D<><>0<>0<><>::
 ::res://Level2/Objects/Collectibles/::1750867449
 ::res://Level2/Platform/::1750867449
@@ -174,14 +174,14 @@ plataforma.gd::GDScript/GDScript::6363992842199150199::1750867449::0::1::::<>Ani
 plataforma.tscn::PackedScene/PackedScene::6746020763230690170::1750867449::0::1::::<><><>0<>0<><>::uid://cofiudn6kiye8::::res://Assets/Platform/tileset.png<>uid://cww1bdmkoif5h::::res://Platform/plataforma.gd
 plateralDRtoIZQ.tscn::PackedScene/PackedScene::4968549890495123711::1750867449::0::1::::<><><>0<>0<><>::uid://c3d28gxa7mh3g::::res://Platform/plataforma.tscn
 platform_up_DWN.tscn::PackedScene/PackedScene::5065998814443454424::1750867449::0::1::::<><><>0<>0<><>::uid://c3d28gxa7mh3g::::res://Platform/plataforma.tscn
-::res://Level2/Player/::1750867449
+::res://Level2/Player/::1750890465
 fall_zone.gd::GDScript/GDScript::3582237287863274553::1750867449::0::1::::<>Area2D<><>0<>0<><>::
 player.gd::GDScript/GDScript::124944727343513557::1750867449::0::1::::<>CharacterBody2D<><>0<>0<><>::
 player.tscn::PackedScene/PackedScene::2399862800073947665::1750867449::0::1::::<><><>0<>0<><>::uid://b1r26sqwtpt2::::res://Player/player.gd<>uid://cg1yd47c7ordd::::res://Assets/Characters/Knight_player/Idle_KG_2.png<>uid://cooo55wd7yqdk::::res://Assets/Characters/Knight_player/Walking_KG_2.png<>uid://bbwat1vverw5o::::res://Assets/Characters/Knight_player/Jump_KG_1.png<>uid://bk25kip17sxgc::::res://Assets/Characters/Knight_player/Landing_KG_1.png
-world.tscn::PackedScene::7541991168679302429::1750867449::0::1::::<><><>0<>0<><>::uid://bagrniqqu820l::::res://Level2/Player/player.tscn<>uid://brbi6pa0wvo38::::res://Level2/Player/fall_zone.gd<>uid://byv7wkh0np1yg::::res://Level2/Assets/Map/4 background/orig.png<>uid://dgux4mg6hs4mn::::res://Level2/Assets/Map/brackeys_platformer_assets/sprites/world_tileset.png<>uid://caoy5ws14svrd::::res://Level2/Objects/hud.tscn<>uid://ofkutgceeemk::::res://Level2/Objects/crystal.tscn<>uid://by3tc57w0nc2i::::res://Level2/Platform/MovexSlide.tscn<>uid://cc12j5e507lpf::::res://Level2/Platform/plateralDRtoIZQ.tscn
+world.tscn::PackedScene::7541991168679302429::1750890465::0::1::::<><><>0<>0<><>::uid://bagrniqqu820l::::res://Level2/Player/player.tscn<>uid://brbi6pa0wvo38::::res://Level2/Player/fall_zone.gd<>uid://byv7wkh0np1yg::::res://Level2/Assets/Map/4 background/orig.png<>uid://dgux4mg6hs4mn::::res://Level2/Assets/Map/brackeys_platformer_assets/sprites/world_tileset.png<>uid://caoy5ws14svrd::::res://Level2/Objects/hud.tscn<>uid://ofkutgceeemk::::res://Level2/Objects/crystal.tscn<>uid://by3tc57w0nc2i::::res://Level2/Platform/MovexSlide.tscn<>uid://cc12j5e507lpf::::res://Level2/Platform/plateralDRtoIZQ.tscn
 ::res://Level2/TileSets/::1750867449
-::res://Menu/::1750867449
-menu.gd::GDScript/GDScript::5502740348621292716::1750867449::0::1::::<>Control<><>0<>0<><>::
-menu.tscn::PackedScene::5457940776160924667::1750867449::0::1::::<><><>0<>0<><>::uid://be036f8u3uylp::::res://Level2/Assets/Menu/Background.png<>uid://ckntlg84pd6jw::::res://Menu/menu.gd<>uid://cyymtw1t4bdea::::res://Level2/Assets/Fonts/MegamaxJonathanToo-YqOq2.ttf
+::res://Menu/::1750890465
+menu.gd::GDScript/GDScript::5502740348621292716::1750867668::0::1::::<>Control<><>0<>0<><>::
+menu.tscn::PackedScene::5457940776160924667::1750890465::0::1::::<><><>0<>0<><>::uid://be036f8u3uylp::::res://Level2/Assets/Menu/Background.png<>uid://ckntlg84pd6jw::::res://Menu/menu.gd<>uid://cyymtw1t4bdea::::res://Level2/Assets/Fonts/MegamaxJonathanToo-YqOq2.ttf
 options.gd::GDScript/GDScript::8259809655098847142::1750867449::0::1::::<>Control<><>0<>0<><>::
 Options.tscn::PackedScene/PackedScene::9027588698910001069::1750867449::0::1::::<><><>0<>0<><>::uid://dpxd4gerjkbba::::res://Menu/options.gd<>uid://be036f8u3uylp::::res://Assets/Menu/Background.png<>uid://cyymtw1t4bdea::::res://Assets/Fonts/MegamaxJonathanToo-YqOq2.ttf

@@ -16,7 +16,7 @@ Un juego de plataformas simple desarrollado con [Godot Engine](https://godotengi
 
 ## 📷 Capturas de pantalla
 
-![Gameplay]("game.png")
+![Gameplay](https://github.com/BelmontDev/GetOut/blob/1bd3323c3eb72012422e21b3d4ac0ac8671c18f3/game.png)
 
 ## ▶️ Cómo jugar
 

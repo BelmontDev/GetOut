@@ -1,6 +1,6 @@
 extends Area2D
 
-enum TipoPlataforma {FIJA, OSCILATORIA, FRAGIL, REBOTE}
+enum TipoPlataforma {FIJA, OSCILATORIA, FRAGIL, REBOTE, ARRIBA_ABAJO}
 @export var tipo: TipoPlataforma = TipoPlataforma.FIJA;
 @export var fuerza_rebote := 2.0
 
@@ -11,6 +11,9 @@ func _ready():
 	
 func actualizar_plataforma():
 	match tipo:
+		TipoPlataforma.ARRIBA_ABAJO:
+			$Sprite2D.modulate = Color.WEB_PURPLE
+			arribajo()
 		TipoPlataforma.FIJA:
 			$Sprite2D.modulate = Color.GREEN
 		TipoPlataforma.OSCILATORIA:
@@ -47,6 +50,11 @@ func oscila():
 	tween.tween_property(self, "position:x",position.x - 100,2)
 	tween.set_loops()
 	
+func arribajo():
+	var tween = create_tween()
+	tween.tween_property(self, "position:y",position.y + 100,1)
+	tween.tween_property(self, "position:y",position.y - 100,1)
+	tween.set_loops()
 	
 	
 	

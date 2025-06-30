@@ -1,5 +1,9 @@
 TileMapLayer
+<<<<<<< HEAD
 TileMap
+=======
+AnimatedSprite2D
+>>>>>>> 15d17d242eb277b6c741c25557e007b932962734
 Sprite2D
 ParallaxLayer
 ParallaxBackground

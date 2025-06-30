@@ -1,8 +1,10 @@
 extends CharacterBody2D
 
+
 var velocidad = 200
 var brinco = -400
 var gravedad = 1000 
+@onready var animated_sprite = $AnimatedSprite
 
 func _ready():
 	add_to_group("jugador")
@@ -23,6 +25,21 @@ func _physics_process(delta):
 	
 	
 	move_and_slide()
+	update_animation()
+
+
+func update_animation():
+	if not is_on_floor():
+		if velocity.y <= 400:
+			animated_sprite.play("jump")
+		else:
+			animated_sprite.play("fall")
+		return
+	
+	if velocity.x != 0:
+		animated_sprite.play("run")
+	else:
+		animated_sprite.play("idle")
 
 
 func _on_reset_area_body_entered(body: Node2D) -> void:

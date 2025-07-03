@@ -1,4 +1,5 @@
 res://Level2/Player/world.tscn
+<<<<<<< HEAD
 res://Level2/Player/fall_zone.gd
 res://Level2/Objects/hud.gd
 res://Menu/menu.gd
@@ -9,5 +10,8 @@ res://plataforma.gd
 res://Level2/Platform/plataforma.gd
 res://Level2/Player/world.gd
 res://Level2/Player/player.gd
+=======
+>>>>>>> c2fc00e85027bd025da14b7b04c673dcf023d6e8
 res://Menu/menu.tscn
 res://finished_menu.tscn
+res://nivel0.tscn

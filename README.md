@@ -1,4 +1,5 @@
 # 🕹️ Get-Out
+By Gilberto Lomeli & Angel Perales
 
 Un juego de plataformas simple desarrollado con [Godot Engine](https://godotengine.org/). Corre, salta y esquiva obstáculos mientras exploras niveles llenos de desafíos.
 

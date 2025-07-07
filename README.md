@@ -27,7 +27,7 @@ Un juego de plataformas simple desarrollado con [Godot Engine](https://godotengi
 
 ## Descripción de recursos 
 
-En esta actividad hicimos la implementación de varios Assets para la parte estética del juego, como a su vez para las animaciones del mismo, esto en cuanto a los personajes, también se usaron algunos para plataformas, fondos y el escenario.
+En esta actividad hicimos la implementación de varios Assets para la parte estética del juego, como a su vez para las animaciones del mismo, esto en cuanto a los personajes, también se usaron algunos para plataformas, fondos y el escenario, Estos en base de cada nivel, pues el juego está basado entre dimensiones, por lo cual cada nivel tiene sus respectivos assets y animaciones.
 
 Aquí hay una ligera demostración de los assets usados:
 

@@ -29,6 +29,8 @@ Un juego de plataformas simple desarrollado con [Godot Engine](https://godotengi
 
 En esta actividad hicimos la implementación de varios Assets para la parte estética del juego, como a su vez para las animaciones del mismo, esto en cuanto a los personajes, también se usaron algunos para plataformas, fondos y el escenario, Estos en base de cada nivel, pues el juego está basado entre dimensiones, por lo cual cada nivel tiene sus respectivos assets y animaciones.
 
+En el nivel 1 se usó un asset para personaje de un aventurero, con vestimenta café y roja, mientras que en el nivel 2 se usó un asset de una guerrera de cabello morado, con armadura plateada y falda roja, así mismo, el nivel 1 está ambientado en el día y el nivel 2 en la noche, donde de fondo podrás observar la luna siguiéndote.
+
 Aquí hay una ligera demostración de los assets usados:
 
 ![Gameplay](https://github.com/BelmontDev/GetOut/blob/level1base/capturas/Captura%20de%20pantalla%202025-07-06%20200428.png)                                                              

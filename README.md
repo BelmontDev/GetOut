@@ -24,3 +24,11 @@ Un juego de plataformas simple desarrollado con [Godot Engine](https://godotengi
 1. Descarga el juego o clónalo:
    ```bash
    git clone https://github.com/BelmontDev/GetOut.git
+
+## Descripción de recursos 
+
+En esta actividad hicimos la implementación de varios Assets para la parte estética del juego, como a su vez para las animaciones del mismo, esto en cuanto a los personajes, también se usaron algunos para plataformas, fondos y el escenario.
+
+Aquí tienes una demostración de los assets usados:
+![Gameplay](https://github.com/BelmontDev/GetOut/blob/level1base/capturas/Captura%20de%20pantalla%202025-07-06%20200428.png) 
+

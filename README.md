@@ -64,3 +64,13 @@ Aquí hay una ligera demostración de los assets usados:
 | Fonts      | `MegamaxJonathanToo-YqOq2.TrueType`                             | 
 | Tileset     | `orig_big`            | 
 
+
+## ✅ Conclusiones
+
+### 🙋‍♂️ Gilberto Lomeli
+Personalmente, no fue difícil para mí adaptarme al uso de GitHub como herramienta de colaboración, ya que ya sabía cómo clonar repositorios, confirmar cambios y enviar. Pero me encontré con algunos detalles, como conflictos durante la fusión si varios miembros cambian el mismo archivo. Además, de alguna manera organizar las sucursales se volvió un poco confuso, ya que no todos trabajábamos en el mismo flujo de trabajo.
+
+### 🙋‍♂️ Angel Perales
+//AQUI VA TU PARTE ANGEL
+
+> 💡 Estas conclusiones reflejan nuestro aprendizaje técnico y personal a lo largo del desarrollo del juego.

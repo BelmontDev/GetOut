@@ -38,3 +38,29 @@ Aquí hay una ligera demostración de los assets usados:
 ![Gameplay](https://github.com/BelmontDev/GetOut/blob/level1base/capturas/Captura%20de%20pantalla%202025-07-06%20200530.png)  
 
 ![Gameplay](https://github.com/BelmontDev/GetOut/blob/level1base/capturas/Day%20Sky.png)                                                               ![Gameplay](https://github.com/BelmontDev/GetOut/blob/main/Game/Level2/Assets/Map/4%20background/1.png) 
+
+
+## 🎨 Recursos / Assets usados
+
+| Tipo        | Recurso                                     |
+|-------------|----------------------------------------------|
+| Tileset     | `Day Sky.png`                     |
+| Plataforma     | `Platform.png`                     | 
+| Puerta     | `puerta.png`                     |
+| Personaje   | `Knightplayer.png`,        | 
+| Personaje   | `adventurer-Sheet.png`,        |
+| Escena    | `platform.tscn`                       | 
+| Escena    | `meta_zone.tscn`                       |
+| Escena    | `menu.tscn`                       |
+| Escena    | `world.tscn`                       | 
+| Escena    | `player.tscn`                       |
+| Escena    | `MovexSlide.tscn`                       |
+| Escena    | `plataforma.tscn`                       |
+| Escena    | `plateralDRtoIZQ.tscn`                       |
+| Escena    | `platform_up_DWN.tscn`                       |
+| Escena    | `crystal.tscn`                       |
+| Escena    | `hud.tscn`                       |
+| Fondo       | `background-layered.png`                     | 
+| Fonts      | `MegamaxJonathanToo-YqOq2.TrueType`                             | 
+| Tileset     | `orig_big`            | 
+

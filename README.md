@@ -31,7 +31,7 @@ En esta actividad hicimos la implementación de varios Assets para la parte est�
 
 Aquí hay una ligera demostración de los assets usados:
 
-![Gameplay](https://github.com/BelmontDev/GetOut/blob/level1base/capturas/Captura%20de%20pantalla%202025-07-06%20200428.png)          ![Gameplay](https://github.com/BelmontDev/GetOut/blob/main/Game/Level2/Assets/Map/4%20background/1.png) 
+![Gameplay](https://github.com/BelmontDev/GetOut/blob/level1base/capturas/Captura%20de%20pantalla%202025-07-06%20200428.png)                                                               ![Gameplay](https://github.com/BelmontDev/GetOut/blob/main/Game/Level2/Assets/Map/4%20background/1.png) 
 
 ![Gameplay](https://github.com/BelmontDev/GetOut/blob/level1base/capturas/Captura%20de%20pantalla%202025-07-06%20200530.png)  
 
